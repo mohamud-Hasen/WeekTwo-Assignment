@@ -1,0 +1,227 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #454f6f;
+    color: white;
+}
+
+header .logo, footer .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .menu ul, footer .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header .menu ul li a, footer .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu ul li a:hover, footer .menu ul li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: orange;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.hero img {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.hero .taste {
+    flex: 1;
+    text-align: left;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #777879;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.about h1 {
+    margin-bottom: 10px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* Foods Section */
+.foods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.foods div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.foods img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.foods h2 {
+    margin: 10px 0;
+}
+
+.foods p {
+    line-height: 1.5;
+}
+
+/* Form Section */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(140, 186, 227);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #fd9a06ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #454f6f;
+    color: white;
+}
+
+ .copyright {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    background-color: #f5ad05;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .menu ul, footer .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        max-width: 80%;
+    }
+
+    .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        max-width: 100%;
+    }
+
+    form, .about, .foods div {
+        padding: 15px;
+    }
+
+    footer .menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero .taste h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero .taste h3 {
+        font-size: 1rem;
+    }
+}
