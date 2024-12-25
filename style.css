@@ -8,7 +8,7 @@ body {
     background-color: #f9f9f9;
 }
 
-header, footer {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,12 +17,12 @@ header, footer {
     color: white;
 }
 
-header .logo, footer .logo {
+header .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-header .menu ul, footer .menu ul {
+header .menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -30,13 +30,13 @@ header .menu ul, footer .menu ul {
     margin: 0;
 }
 
-header .menu ul li a, footer .menu ul li a {
+header .menu ul li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-header .menu ul li a:hover, footer .menu ul li a:hover {
+header .menu ul li a:hover {
     color: #007BFF;
 }
 
@@ -167,6 +167,26 @@ footer {
     background-color: #454f6f;
     color: white;
 }
+footer .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+footer .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+footer .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer .menu ul li a:hover {
+    color: #007BFF;
+}
+
 
  .copyright {
     text-align: center;
